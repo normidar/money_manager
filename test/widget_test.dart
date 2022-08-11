@@ -31,6 +31,7 @@ void main() {
   });
 
   test('test Period', () async {
+
     // 同方向无限Period
     Period unlimitedPerion = UnlimitedPeriod(from: Date(2022), isAfter: true);
     Period unlimitedPerion2 = UnlimitedPeriod(from: Date(2023), isAfter: true);

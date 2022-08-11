@@ -2,6 +2,7 @@ import 'package:money_manager/money_engine/type_def.dart';
 
 /// 表示一段期间
 abstract class Period {
+  const Period();
   Date get from;
   bool isDateIn(Date date);
   bool get isAfter;
@@ -22,7 +23,7 @@ class BetweenPeriod extends Period {
   final Date from;
   final Date to;
 
-  BetweenPeriod({required this.from, required this.to});
+  const BetweenPeriod({required this.from, required this.to});
 
   @override
   bool get isAfter => to.isAfter(from);
@@ -61,7 +62,7 @@ class UnlimitedPeriod extends Period {
   final Date from;
   @override
   final bool isAfter;
-  UnlimitedPeriod({required this.from, required this.isAfter});
+  const UnlimitedPeriod({required this.from, required this.isAfter});
 
   @override
   bool isDateIn(Date date) =>

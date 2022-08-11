@@ -12,4 +12,6 @@ abstract class Account {
   /// 获取从某日期开始的迭代器
   /// if isBack is true then return after date, else return before date.
   Stream<Journal> getIteratorFromDate(Period period);
+
+  
 }
