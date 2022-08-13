@@ -33,7 +33,7 @@ void main() {
 
   test('dec test', () async {
     print(0.1 + 0.2);
-    print(Dec.parse('0.1') + Dec.parse('0.2'));
+    print(Dec.zero + Dec.parse('0.2'));
     print(Date(2022) == Date(2022));
     print(JournalType('a') == JournalType('a'));
   });
