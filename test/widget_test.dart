@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:money_manager/main.dart';
+import 'package:money_manager/money_engine/data_type/journal_type.dart';
 import 'package:money_manager/money_engine/data_type/period.dart';
 import 'package:money_manager/money_engine/type_def.dart';
 
@@ -30,8 +31,14 @@ void main() {
     expect(find.text('1'), findsOneWidget);
   });
 
-  test('test Period', () async {
+  test('dec test', () async {
+    print(0.1 + 0.2);
+    print(Dec.parse('0.1') + Dec.parse('0.2'));
+    print(Date(2022) == Date(2022));
+    print(JournalType('a') == JournalType('a'));
+  });
 
+  test('test Period', () async {
     // 同方向无限Period
     Period unlimitedPerion = UnlimitedPeriod(from: Date(2022), isAfter: true);
     Period unlimitedPerion2 = UnlimitedPeriod(from: Date(2023), isAfter: true);
