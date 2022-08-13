@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:money_manager/main.dart';
-import 'package:money_manager/money_engine/data_type/journal_type.dart';
+import 'package:money_manager/money_engine/data_type/jouranl/journal_type.dart';
 import 'package:money_manager/money_engine/data_type/period.dart';
 import 'package:money_manager/money_engine/type_def.dart';
 

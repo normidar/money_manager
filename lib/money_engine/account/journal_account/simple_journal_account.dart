@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_manager/money_engine/account/journal_account/journal_account.dart';
-import 'package:money_manager/money_engine/data_type/journal.dart';
+import 'package:money_manager/money_engine/data_type/jouranl/journal.dart';
 import 'package:money_manager/money_engine/data_type/period.dart';
 import 'package:money_manager/money_engine/type_def.dart';
 

@@ -1,10 +1,10 @@
 // 表示一条流水的类型
-import 'package:money_manager/money_engine/data_type/journal_type.dart';
+import 'package:money_manager/money_engine/data_type/jouranl/journal_type.dart';
 import 'package:money_manager/money_engine/type_def.dart';
 
 class Journal {
   /// 如果无id将难以删除
-  String id;
+  final String id;
   final Date date;
 
   /// 流水额 必须正数
