@@ -61,7 +61,7 @@ abstract class SimpleJournalAccount extends JournalAccount {
 
   /// 获取账户价值
   @override
-  Future<Dec> getAssetValue() async {
+  Future<Dec> getAccountValue() async {
     Dec result = Dec.zero;
     for (var e in await getJournalDatas()) {
       if (e.isExpense) {

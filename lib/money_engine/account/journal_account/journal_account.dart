@@ -1,7 +1,6 @@
 import 'package:money_manager/money_engine/account/account.dart';
 import 'package:money_manager/money_engine/data_type/jouranl/journal.dart';
 import 'package:money_manager/money_engine/data_type/period.dart';
-import 'package:money_manager/money_engine/type_def.dart';
 
 /// 表示一个账户，可以是现金账户，或者是
 abstract class JournalAccount extends Account {
@@ -23,8 +22,4 @@ abstract class JournalAccount extends Account {
 
   /// 获取流水账的数量
   Future<int> getJouranlCount();
-
-  /// 获取账户价值
-  @override
-  Future<Dec> getAssetValue();
 }
