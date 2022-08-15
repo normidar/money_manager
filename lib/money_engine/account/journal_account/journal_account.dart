@@ -4,9 +4,6 @@ import 'package:money_manager/money_engine/data_type/period.dart';
 
 /// 表示一个账户，可以是现金账户，或者是
 abstract class JournalAccount extends Account {
-  /// 获取一段期间的流水
-  Future<List<Journal>> getJournal(Period period);
-
   /// 写入一条流水到账户, true成功，false失败
   Future<bool> writeJournal(Journal journal);
 
@@ -19,6 +16,9 @@ abstract class JournalAccount extends Account {
 
   /// 获取所有流水账
   Future<List<Journal>> getAllJouranl();
+
+  /// 获取一段期间的流水
+  Future<List<Journal>> getJournal(Period period);
 
   /// 获取流水账的数量
   Future<int> getJouranlCount();
