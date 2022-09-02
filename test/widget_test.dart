@@ -11,6 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:money_manager/main.dart';
 import 'package:money_manager/money_engine/data_type/jouranl/journal_type.dart';
 import 'package:money_manager/money_engine/data_type/period.dart';
+import 'package:money_manager/money_engine/database_engine/file/file_database.dart';
 import 'package:money_manager/money_engine/type_def.dart';
 
 void main() {
@@ -36,6 +37,10 @@ void main() {
     print(Dec.zero + Dec.parse('0.2'));
     print(Date(2022) == Date(2022));
     print(JournalType('a') == JournalType('a'));
+  });
+
+  test('dec test2', () async {
+    print(await FileDatabase('/a').getFullPath());
   });
 
   test('test Period', () async {
